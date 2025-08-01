@@ -55,11 +55,21 @@ import copy
 from types import FunctionType as function
 from typing import Set, List, Dict, Tuple, Union, Callable, Any, Optional, no_type_check
 
+# try: PROXY = open("local_proxy.conf").read().strip()
+# except FileNotFoundError: LOCAL = False; PROXY = None
+# else:
+#     if not PROXY: PROXY = None
+#     LOCAL = not PROXY
+import os
 try: PROXY = open("local_proxy.conf").read().strip()
 except FileNotFoundError: LOCAL = False; PROXY = None
 else:
     if not PROXY: PROXY = None
     LOCAL = not PROXY
+
+# 云端自动禁用代理
+if os.environ.get("GITHUB_ACTIONS") == "true":
+    PROXY = None
 
 def b64encodes(s: str):
     return base64.b64encode(s.encode('utf-8')).decode('utf-8')

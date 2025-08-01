@@ -1,9 +1,9 @@
 name: Auto Fetch Clash Nodes
 
 on:
-  workflow_dispatch:         # 可以手动触发
+  workflow_dispatch:
   schedule:
-    - cron: '0 2 * * *'      # 每天10点自动跑
+    - cron: '0 2 * * *'
 
 jobs:
   fetch-nodes:
@@ -18,8 +18,10 @@ jobs:
         python-version: '3.10'
 
     - name: Install dependencies
-      run: |
-        pip install -r requirements.txt
+      run: pip install -r requirements.txt
+
+    - name: Prepare output directories
+      run: mkdir -p snippets
 
     - name: Run fetch.py
       run: python fetch.py

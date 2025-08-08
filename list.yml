@@ -1,4 +1,4 @@
-# Update: 2025-08-07 03:41
+# Update: 2025-08-08 03:41
 allow-lan: false
 dns:
   enable: true
@@ -139,7 +139,7 @@ proxies:
   name: tg频道:@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.130.58.99
+  server: 13.55.202.54
   tfo: false
   type: ss
 - alterId: 2
@@ -175,7 +175,7 @@ proxies:
   type: ss
 - name: 香港4|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 447
   server: 36.156.102.125
   skip-cert-verify: true
@@ -183,7 +183,7 @@ proxies:
   type: trojan
 - name: 香港6|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 444
   server: 36.156.102.125
   skip-cert-verify: true
@@ -194,7 +194,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-9VmVbE7FgF.download.microsoft.com
+    host: 202507282137611-Ibej7QBdUa.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -217,40 +217,55 @@ proxies:
   type: ss
 - name: 日本3|@ripaojiedian
   network: tcp
-  password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
-  port: 23008
-  server: okanc.iepl.cac.cab
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 157.120.32.122
   skip-cert-verify: true
-  sni: www.bilibili.com
+  sni: www.baidu.com
   type: trojan
 - name: 日本4|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 461
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- name: 日本5|@ripaojiedian
+  network: tcp
+  password: 6bc1c915-2fee-469b-b0e2-01968be45bf6
+  port: 23007
+  server: okanc.iepl.cac.cab
+  skip-cert-verify: true
+  sni: www.bilibili.com
+  type: trojan
 - name: 韩国|@ripaojiedian
   network: tcp
-  password: 6b5b43c9-05bd-471e-b502-d52c0dbd55fd
+  password: 6bc1c915-2fee-469b-b0e2-01968be45bf6
   port: 24001
   server: okanc.iepl.cac.cab
   skip-cert-verify: true
   sni: www.bilibili.com
   type: trojan
+- name: 韩国2|@ripaojiedian
+  network: tcp
+  password: 005fddef-e432-482f-a98c-2715563a2b25
+  port: 36009
+  server: 139.199.194.86
+  skip-cert-verify: true
+  type: trojan
 - name: 新加坡|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 1601
-  server: 36.156.102.125
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 165.22.55.206
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 697
+  password: 253bc477d4e43c209f2d427272968280
+  port: 406
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
@@ -272,7 +287,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-9VmVbE7FgF.download.microsoft.com
+    host: 202507282137611-Ibej7QBdUa.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -280,7 +295,7 @@ proxies:
   type: ss
 - name: 美国3|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 329
   server: 36.156.102.125
   skip-cert-verify: true
@@ -288,22 +303,29 @@ proxies:
   type: trojan
 - name: 美国4|@ripaojiedian
   network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
+  password: 253bc477d4e43c209f2d427272968280
   port: 472
   server: 36.156.102.125
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.155.20
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 香港v2|@ripaojiedian
   network: kcp
-  port: '32791'
-  server: 47.243.95.92
+  port: '5225'
+  server: 47.243.135.47
   servername: ''
   tls: false
   type: vmess
-  uuid: 892ed9b7-70b2-48cb-8334-7c59e4e10daa
+  uuid: e64f666d-4b75-473b-9cc2-aaf6f0bf0e33
 - alterId: 0
   cipher: auto
   name: 日本v2|@ripaojiedian
@@ -349,35 +371,38 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 🇭🇰 香港2|@ripaojiedian
-  - 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
-  - 🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
-  - 🇺🇸 美国|@ripaojiedian
   - 🇩🇪5 |  1.4MB/s|0%|Youtube|Open...
-  - 🇺🇸62 |  3.3MB/s|Openai|Gemini
-  - 🌀3-SK |  5.0MB/s|0%|Youtube|Op...
-  - 🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
-  - 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
-  - 🇯🇵 日本|@ripaojiedian
-  - 香港|@ripaojiedian
-  - 美国4|@ripaojiedian
-  - 🇯🇵 日本2|@ripaojiedian
-  - 🌀4-TH |  2.6MB/s|55%|Netflix|O...
-  - US_speednode_0123
-  - 🇺🇸 美国2|@ripaojiedian
-  - 🇰🇷2 |  1.5MB/s|44%|Openai
-  - 美国3|@ripaojiedian
+  - 日本5|@ripaojiedian
   - 🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
-  - 香港4|@ripaojiedian
-  - 日本3|@ripaojiedian
-  - 韩国|@ripaojiedian
   - 日本v2|@ripaojiedian
-  - 香港6|@ripaojiedian
+  - 🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  - 🇺🇸 美国|@ripaojiedian
+  - 🌀4-TH |  2.6MB/s|55%|Netflix|O...
+  - 🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+  - 🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+  - 美国4|@ripaojiedian
+  - 🇭🇰 香港2|@ripaojiedian
   - 新加坡|@ripaojiedian
-  - 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   - tg频道:@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
   - 日本4|@ripaojiedian
+  - 🇭🇰1 |  1.8MB/s|15%|Disney|Yout...
   - 香港v2|@ripaojiedian
+  - 韩国2|@ripaojiedian
+  - 🇺🇸62 |  3.3MB/s|Openai|Gemini
+  - 🇰🇷2 |  1.5MB/s|44%|Openai
+  - 🌀3-SK |  5.0MB/s|0%|Youtube|Op...
+  - 香港6|@ripaojiedian
+  - 🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  - 🇯🇵 日本|@ripaojiedian
+  - 韩国|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 日本3|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 香港4|@ripaojiedian
+  - 美国3|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - US_speednode_0123
   - 美国|@ripaojiedian
   - 新加坡2|@ripaojiedian
   type: fallback
@@ -440,6 +465,7 @@ proxy-groups:
   - 🇯🇵 日本2|@ripaojiedian
   - 日本3|@ripaojiedian
   - 日本4|@ripaojiedian
+  - 日本5|@ripaojiedian
   - 日本v2|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
@@ -494,6 +520,7 @@ proxy-groups:
   proxies:
   - 🇰🇷2 |  1.5MB/s|44%|Openai
   - 韩国|@ripaojiedian
+  - 韩国2|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:

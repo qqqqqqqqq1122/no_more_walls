@@ -1,4 +1,4 @@
-# Update: 2025-08-24 03:16
+# Update: 2025-08-25 03:12
 allow-lan: false
 dns:
   enable: true
@@ -18,6 +18,13 @@ log-level: warning
 mixed-port: 7890
 mode: rule
 proxies:
+- cipher: aes-256-cfb
+  name: tg频道:@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 34.251.108.96
+  tfo: false
+  type: ss
 - alterId: 2
   cipher: auto
   name: 香港|@ripaojiedian
@@ -62,26 +69,16 @@ proxies:
 - name: 香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 51281
+  port: 1346
   server: 36.150.215.141
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 🇭🇰 香港5|@ripaojiedian
-  port: 48383
-  server: 183.240.245.241
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 443
-  server: 43.199.31.125
+  port: 5439
+  server: 36.150.215.141
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
@@ -97,7 +94,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508100385405-YeOFla7vv5.download.microsoft.com
+    host: 202508150964186-6BC1sDS0wf.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -134,13 +131,6 @@ proxies:
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
-- cipher: aes-256-gcm
-  name: 🇯🇵 日本5|@ripaojiedian
-  password: pRAqZ4afakQyiP8f
-  port: 8388
-  server: 167.17.179.116
-  tfo: false
-  type: ss
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -157,12 +147,28 @@ proxies:
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 美国|@ripaojiedian
+  network: ws
+  port: '22100'
+  server: 45.136.245.177
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 58abdfa2-3565-4280-9a98-a2c3e6f5c0ef
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: rc4-md5
   name: 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508100385405-YeOFla7vv5.download.microsoft.com
+    host: 202508150964186-6BC1sDS0wf.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -171,10 +177,10 @@ proxies:
 - name: 美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 347
-  server: 36.156.102.125
+  port: 480
+  server: 36.150.215.141
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: v1-dy.ixigua.com
   type: trojan
 - name: 美国4|@ripaojiedian
   network: tcp
@@ -184,13 +190,6 @@ proxies:
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
-- cipher: aes-128-gcm
-  name: 🇻🇳 越南|@ripaojiedian
-  password: 6b1e5475-7661-4921-aa26-d11758b2f3f1
-  port: 13878
-  server: yuenan02.tmdns-sing.top
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 香港3|@ripaojiedian
@@ -201,26 +200,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 7364bf26-0eb6-40cc-b7e6-fb1a4b6bf69c
-- alterId: 64
-  cipher: auto
-  name: 香港5|@ripaojiedian
-  network: tcp
-  port: '48383'
-  server: 183.240.245.241
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 香港v2|@ripaojiedian
   network: kcp
-  port: '3351'
-  server: 47.83.181.154
+  port: '28590'
+  server: 47.239.183.87
   servername: ''
   tls: false
   type: vmess
-  uuid: 0bfc8acf-ac40-45c1-8dde-7f3417621286
+  uuid: d75481c7-b5c8-40a9-811a-02b709e74816
 - alterId: 0
   cipher: auto
   name: 日本v2|@ripaojiedian
@@ -231,6 +220,84 @@ proxies:
   tls: false
   type: vmess
   uuid: cb774883-1c2f-4b8a-8637-828f356e0c76
+- name: KZ_speednode_0047
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 194.76.18.129
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: LT_speednode_0052
+  network: ws
+  password: ttfang
+  port: 2096
+  server: 86.38.214.194
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /TelegramU0001F1E8U0001F1F3
+- name: RU_speednode_0081
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 45.67.215.95
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: US_speednode_0109
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 198.62.62.67
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
+- name: US_speednode_0110
+  network: ws
+  password: ttfang
+  port: 2096
+  server: ttfang.fange.me
+  skip-cert-verify: false
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /Telegram🇨🇳
+- name: US_speednode_0111
+  network: ws
+  password: tg-fq521free
+  port: 443
+  server: 216.24.57.30
+  skip-cert-verify: false
+  sni: torjan.xn--xhq44j.eu.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: torjan.xn--xhq44j.eu.org
+    path: /
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -242,28 +309,32 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 美国3|@ripaojiedian
-  - 🇯🇵 日本2|@ripaojiedian
+  - LT_speednode_0052
+  - US_speednode_0110
+  - KZ_speednode_0047
   - 新加坡2|@ripaojiedian
-  - 香港|@ripaojiedian
-  - 🇺🇸 美国2|@ripaojiedian
-  - 🇯🇵 日本5|@ripaojiedian
-  - 🇭🇰 香港5|@ripaojiedian
-  - 美国4|@ripaojiedian
-  - 🇯🇵 日本|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
   - 日本3|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 日本v2|@ripaojiedian
+  - 新加坡|@ripaojiedian
+  - 美国4|@ripaojiedian
+  - tg频道:@ripaojiedian
+  - 香港6|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇹🇼 台湾|@ripaojiedian
+  - 香港v2|@ripaojiedian
+  - 美国|@ripaojiedian
+  - 美国3|@ripaojiedian
+  - 日本4|@ripaojiedian
+  - US_speednode_0111
+  - RU_speednode_0081
+  - 香港|@ripaojiedian
+  - 香港3|@ripaojiedian
   - 🇭🇰 香港2|@ripaojiedian
   - 香港4|@ripaojiedian
-  - 日本v2|@ripaojiedian
-  - 🇻🇳 越南|@ripaojiedian
-  - 香港v2|@ripaojiedian
-  - 日本4|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 🇭🇰 香港3|@ripaojiedian
-  - 香港6|@ripaojiedian
-  - 香港3|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 🇹🇼 台湾|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - US_speednode_0109
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -323,14 +394,17 @@ proxy-groups:
   - 🇯🇵 日本2|@ripaojiedian
   - 日本3|@ripaojiedian
   - 日本4|@ripaojiedian
-  - 🇯🇵 日本5|@ripaojiedian
   - 日本v2|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
+  - 美国|@ripaojiedian
   - 🇺🇸 美国2|@ripaojiedian
   - 美国3|@ripaojiedian
   - 美国4|@ripaojiedian
+  - US_speednode_0109
+  - US_speednode_0110
+  - US_speednode_0111
   type: select
 - name: 🇨🇳 台湾
   proxies:
@@ -346,10 +420,8 @@ proxy-groups:
   - 🇭🇰 香港2|@ripaojiedian
   - 🇭🇰 香港3|@ripaojiedian
   - 香港4|@ripaojiedian
-  - 🇭🇰 香港5|@ripaojiedian
   - 香港6|@ripaojiedian
   - 香港3|@ripaojiedian
-  - 香港5|@ripaojiedian
   - 香港v2|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
@@ -375,7 +447,7 @@ proxy-groups:
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - REJECT
+  - RU_speednode_0081
   type: select
 - name: 🇩🇪 德国
   proxies:

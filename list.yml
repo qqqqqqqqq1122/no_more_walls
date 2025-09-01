@@ -1,4 +1,4 @@
-# Update: 2025-08-31 03:03
+# Update: 2025-09-01 03:18
 allow-lan: false
 dns:
   enable: true
@@ -59,13 +59,13 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇭🇰 香港3|@ripaojiedian
-  port: 51571
-  server: 38.147.188.96
+  port: 25013
+  server: 38.147.188.160
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
+  uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
 - name: 香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -74,6 +74,16 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- alterId: 64
+  cipher: auto
+  name: 🇭🇰 香港5|@ripaojiedian
+  port: 47272
+  server: 183.240.245.250
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -84,16 +94,16 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 🇹🇼 台湾|@ripaojiedian
-  password: 182a640c-ca1a-425e-8398-d5ac86bfb096
-  port: 10129
-  server: 114.35.114.182
+  password: 34393fa0-a7d3-4c4a-bd18-c70764f73a6d
+  port: 10061
+  server: 118.170.208.178
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇹🇼 台湾2|@ripaojiedian
-  password: ce7149cd-ea77-4e46-af7d-d4f6930ea541
-  port: 10113
-  server: 125.228.31.10
+  password: 5063e044-694e-400c-8db7-76223e86b6fb
+  port: 10097
+  server: 125.228.31.117
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -101,12 +111,20 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-UsfARRoWJx.download.microsoft.com
+    host: 202508150964186-OTqy9HvgIK.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- name: 日本3|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3270
+  server: 36.150.215.203
+  skip-cert-verify: true
+  sni: www.baidu.com
+  type: trojan
 - cipher: aes-256-gcm
   name: 🇯🇵 日本2|@ripaojiedian
   password: 8a6ca14c0936
@@ -122,14 +140,6 @@ proxies:
   server: 137.220.142.150
   tfo: false
   type: ss
-- name: 日本3|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3270
-  server: 36.150.215.203
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
 - name: 日本4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -138,13 +148,6 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: aes-128-gcm
-  name: 🇯🇵 日本5|@ripaojiedian
-  password: 940031a6-fd32-4d6b-901d-77b7f943698e
-  port: 50414
-  server: bl.sytes.net
-  tfo: false
-  type: ss
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -184,22 +187,12 @@ proxies:
   server: awes35lesl.blhao0o.dpdns.org
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国|@ripaojiedian
-  port: 443
-  server: 165.140.216.141
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 - cipher: rc4-md5
   name: 🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-UsfARRoWJx.download.microsoft.com
+    host: 202508150964186-OTqy9HvgIK.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -213,13 +206,6 @@ proxies:
   skip-cert-verify: true
   sni: 36.156.102.116
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇮🇳 印度|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 134.209.147.198
-  tfo: false
-  type: ss
 - name: 美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -232,12 +218,22 @@ proxies:
   cipher: auto
   name: 香港3|@ripaojiedian
   network: tcp
-  port: '51571'
-  server: 38.147.188.96
+  port: '25013'
+  server: 38.147.188.160
   servername: ''
   tls: false
   type: vmess
-  uuid: 740ec514-d2bd-45bb-b410-7ea5a05cdd87
+  uuid: e90bfc71-1a0a-43e8-9272-6be036e9d88e
+- alterId: 64
+  cipher: auto
+  name: 香港5|@ripaojiedian
+  network: tcp
+  port: '47272'
+  server: 183.240.245.250
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 香港v2|@ripaojiedian
@@ -258,16 +254,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 8a9150bc-b9c8-40ac-be83-aaec45176a81
-- alterId: 0
-  cipher: auto
-  name: 美国|@ripaojiedian
-  network: tcp
-  port: '443'
-  server: 165.140.216.141
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e7d72a8d-26f2-4b54-b366-0c43e0bcba7d
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -279,32 +265,30 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 🇭🇰 香港3|@ripaojiedian
-  - 🇺🇸 美国|@ripaojiedian
-  - 香港v2|@ripaojiedian
-  - 🇮🇳 印度|@ripaojiedian
-  - 新加坡3|@ripaojiedian
-  - 🇹🇼 台湾|@ripaojiedian
-  - 新加坡2|@ripaojiedian
   - 新加坡|@ripaojiedian
-  - 🇭🇰 香港2|@ripaojiedian
-  - 🇯🇵 日本2|@ripaojiedian
-  - 日本3|@ripaojiedian
-  - 美国4|@ripaojiedian
-  - 香港3|@ripaojiedian
-  - 美国|@ripaojiedian
+  - 新加坡3|@ripaojiedian
   - 日本4|@ripaojiedian
-  - 🇯🇵 日本|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 香港|@ripaojiedian
-  - 🇯🇵 日本5|@ripaojiedian
-  - 🇺🇸 美国2|@ripaojiedian
-  - 美国3|@ripaojiedian
-  - 🇹🇼 台湾2|@ripaojiedian
-  - 🇸🇬 新加坡4|@ripaojiedian
-  - 香港6|@ripaojiedian
+  - 新加坡2|@ripaojiedian
+  - 美国4|@ripaojiedian
   - tg频道:@ripaojiedian
+  - 香港|@ripaojiedian
+  - 🇭🇰 香港3|@ripaojiedian
+  - 香港3|@ripaojiedian
+  - 日本3|@ripaojiedian
+  - 🇹🇼 台湾2|@ripaojiedian
+  - 🇹🇼 台湾|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇭🇰 香港2|@ripaojiedian
+  - 美国3|@ripaojiedian
   - 日本v2|@ripaojiedian
+  - 香港4|@ripaojiedian
+  - 🇸🇬 新加坡4|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 香港6|@ripaojiedian
+  - 香港v2|@ripaojiedian
+  - 🇺🇸 美国2|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -361,19 +345,16 @@ proxy-groups:
 - name: 🇯🇵 日本
   proxies:
   - 🇯🇵 日本|@ripaojiedian
-  - 🇯🇵 日本2|@ripaojiedian
   - 日本3|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
   - 日本4|@ripaojiedian
-  - 🇯🇵 日本5|@ripaojiedian
   - 日本v2|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
-  - 🇺🇸 美国|@ripaojiedian
   - 🇺🇸 美国2|@ripaojiedian
   - 美国3|@ripaojiedian
   - 美国4|@ripaojiedian
-  - 美国|@ripaojiedian
   type: select
 - name: 🇨🇳 台湾
   proxies:
@@ -390,8 +371,10 @@ proxy-groups:
   - 🇭🇰 香港2|@ripaojiedian
   - 🇭🇰 香港3|@ripaojiedian
   - 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
   - 香港6|@ripaojiedian
   - 香港3|@ripaojiedian
+  - 香港5|@ripaojiedian
   - 香港v2|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大

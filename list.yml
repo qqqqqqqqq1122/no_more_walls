@@ -1,4 +1,4 @@
-# Update: 2025-09-05 02:55
+# Update: 2025-09-06 02:51
 allow-lan: false
 dns:
   enable: true
@@ -56,16 +56,22 @@ proxies:
   server: 156.251.179.135
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 🇭🇰 香港3|@ripaojiedian
-  port: 15778
-  server: 38.147.188.234
+  name: 香港3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: e4c54f8f-78bd-439d-8365-28f261078962
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - name: 香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -74,6 +80,16 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港5|@ripaojiedian
+  port: 28677
+  server: 43.247.134.80
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f9575b63-7410-4c76-88db-91c24a429ea8
 - name: 香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -83,24 +99,24 @@ proxies:
   sni: 23.45.86.28
   type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾2|@ripaojiedian
-  password: ed212b13-12b8-4ea2-9643-6658b18d5583
-  port: 10055
-  server: 114.46.70.116
+  name: 🇹🇼 台湾|@ripaojiedian
+  password: e690cd6f-6c50-42e2-8b51-570e95a9be19
+  port: 10065
+  server: 125.231.72.120
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇹🇼 台湾|@ripaojiedian
-  password: b9d3c170-e6a5-45a3-bc37-f56892b9e819
-  port: 10031
-  server: 118.170.200.223
+  name: 🇹🇼 台湾2|@ripaojiedian
+  password: 674ee5a2-42e6-4c9f-ab6f-885f9c8e71c9
+  port: 10065
+  server: 125.231.72.120
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇹🇼 台湾3|@ripaojiedian
-  password: 5695443d-9206-49b5-99be-e1276218c54e
-  port: 10121
-  server: 125.229.88.58
+  password: 140e4cb2-a874-414b-a58b-c0300720fa7d
+  port: 10066
+  server: 59.126.32.59
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -108,7 +124,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-l8SKVM0gmL.download.microsoft.com
+    host: 202509031722041-Q3bErDTbkB.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -145,10 +161,21 @@ proxies:
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
+- cipher: aes-128-gcm
+  name: 🇰🇷 韩国|@ripaojiedian
+  password: VXPipi29nxMO
+  plugin: obfs
+  plugin-opts:
+    host: 182039459a34f64238143cd31ddebbc914362.taobao.com
+    mode: http
+  port: 1052
+  server: kr2.qiangdong.xyz
+  tfo: false
+  type: ss
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1523
+  port: 46943
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -182,7 +209,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202509031722041-l8SKVM0gmL.download.microsoft.com
+    host: 202509031722041-Q3bErDTbkB.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -206,14 +233,14 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 香港3|@ripaojiedian
+  name: 香港5|@ripaojiedian
   network: tcp
-  port: '15778'
-  server: 38.147.188.234
+  port: '28677'
+  server: 43.247.134.80
   servername: ''
   tls: false
   type: vmess
-  uuid: e4c54f8f-78bd-439d-8365-28f261078962
+  uuid: f9575b63-7410-4c76-88db-91c24a429ea8
 - alterId: 0
   cipher: auto
   name: 香港v2|@ripaojiedian
@@ -247,20 +274,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: CH_speednode_0002
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.18.250.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: CY_speednode_0006
+- name: CY_speednode_0007
   network: ws
   password: slch2024
   port: 2096
@@ -273,7 +287,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: CZ_speednode_0007
+- name: CZ_speednode_0008
   network: ws
   password: slch2024
   port: 2096
@@ -286,7 +300,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: DE_speednode_0008
+- name: DE_speednode_0009
   network: ws
   password: slch2024
   port: 2096
@@ -299,7 +313,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: ES_speednode_0009
+- name: ES_speednode_0010
   network: ws
   password: slch2024
   port: 2096
@@ -312,24 +326,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: ES_speednode_0010
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.251.80.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram%25F0%259F%2587%25A8%25F0%259F%2587%25B3
 - name: ES_speednode_0011
   network: ws
   password: slch2024
   port: 2096
-  server: 185.251.82.195
+  server: 185.251.80.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -342,7 +343,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.251.83.195
+  server: 185.251.82.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -355,7 +356,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.251.80.195
+  server: 185.251.83.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -368,7 +369,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.251.81.195
+  server: 185.238.228.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -381,7 +382,20 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 185.238.228.195
+  server: 185.251.81.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: FR_speednode_0016
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.16.110.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -403,11 +417,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: FR_speednode_0018
+- name: GB_speednode_0018
   network: ws
   password: slch2024
   port: 2096
-  server: 185.16.110.195
+  server: 194.36.55.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -429,33 +443,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: GB_speednode_0020
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 194.36.55.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: KZ_speednode_0022
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.176.26.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: KZ_speednode_0023
+- name: KZ_speednode_0029
   network: ws
   password: slch2024
   port: 2096
@@ -468,7 +456,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: LU_speednode_0024
+- name: LU_speednode_0032
   network: ws
   password: slch2024
   port: 2096
@@ -481,11 +469,11 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: NL_speednode_0026
+- name: LU_speednode_0033
   network: ws
   password: slch2024
   port: 2096
-  server: 185.18.184.195
+  server: 188.42.89.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -494,7 +482,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: NL_speednode_0028
+- name: NL_speednode_0034
   network: ws
   password: slch2024
   port: 2096
@@ -507,46 +495,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: RU_speednode_0029
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.107.195
-  skip-cert-verify: true
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /TelegramU0001F1E8U0001F1F3
-- name: RU_speednode_0030
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: RU_speednode_0031
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.174.138.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: RU_speednode_0032
+- name: RU_speednode_0035
   network: ws
   password: slch2024
   port: 2096
@@ -559,7 +508,33 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: RU_speednode_0033
+- name: RU_speednode_0036
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.107.195
+  skip-cert-verify: true
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /TelegramU0001F1E8U0001F1F3
+- name: RU_speednode_0037
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 188.42.145.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: RU_speednode_0038
   network: ws
   password: slch2024
   port: 2096
@@ -572,7 +547,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: RU_speednode_0034
+- name: RU_speednode_0039
   network: ws
   password: slch2024
   port: 2096
@@ -585,20 +560,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: RU_speednode_0035
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 213.219.247.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: RU_speednode_0036
+- name: RU_speednode_0040
   network: ws
   password: slch2024
   port: 2096
@@ -611,33 +573,7 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: US_speednode_0037
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 209.94.90.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0039
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.105.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0040
+- name: US_speednode_0041
   network: ws
   password: slch2024
   port: 2096
@@ -654,7 +590,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 216.24.57.195
+  server: 199.34.230.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -667,7 +603,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 192.0.54.195
+  server: 209.94.90.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -680,7 +616,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 195.13.45.195
+  server: 185.148.106.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -693,7 +629,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 199.181.197.195
+  server: 192.0.63.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -706,7 +642,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 195.13.55.195
+  server: 192.0.54.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -719,7 +655,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 195.13.44.195
+  server: 192.200.160.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -745,72 +681,7 @@ proxies:
   network: ws
   password: slch2024
   port: 2096
-  server: 195.13.54.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0050
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.0.63.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0051
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.148.106.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0052
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.230.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0053
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 199.34.229.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
-- name: US_speednode_0054
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 192.200.160.195
+  server: 195.13.45.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -830,73 +701,63 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - AT_speednode_0001
-  - US_speednode_0043
-  - 🇹🇼 台湾3|@ripaojiedian
-  - 🇭🇰 香港3|@ripaojiedian
-  - FR_speednode_0017
-  - NL_speednode_0028
-  - CH_speednode_0002
-  - RU_speednode_0032
-  - US_speednode_0040
-  - 香港|@ripaojiedian
-  - 香港3|@ripaojiedian
-  - US_speednode_0042
-  - US_speednode_0051
-  - 香港4|@ripaojiedian
-  - 🇹🇼 台湾2|@ripaojiedian
-  - 香港6|@ripaojiedian
-  - US_speednode_0039
-  - 日本3|@ripaojiedian
-  - US_speednode_0053
-  - CY_speednode_0006
-  - KZ_speednode_0023
-  - LU_speednode_0024
-  - DE_speednode_0008
-  - ES_speednode_0009
+  - KZ_speednode_0029
   - ES_speednode_0014
-  - US_speednode_0047
-  - US_speednode_0049
-  - tg频道:@ripaojiedian
-  - RU_speednode_0034
-  - RU_speednode_0029
-  - US_speednode_0054
-  - US_speednode_0045
-  - 🇹🇼 台湾|@ripaojiedian
-  - US_speednode_0046
-  - KZ_speednode_0022
-  - RU_speednode_0030
-  - 新加坡3|@ripaojiedian
-  - US_speednode_0044
-  - RU_speednode_0033
-  - US_speednode_0052
-  - 🇭🇰 香港2|@ripaojiedian
-  - 🇯🇵 日本|@ripaojiedian
-  - NL_speednode_0026
-  - 美国3|@ripaojiedian
-  - ES_speednode_0013
-  - US_speednode_0037
-  - 新加坡|@ripaojiedian
-  - 日本v2|@ripaojiedian
-  - 日本4|@ripaojiedian
-  - CZ_speednode_0007
-  - GB_speednode_0019
-  - 🇯🇵 日本2|@ripaojiedian
-  - 新加坡2|@ripaojiedian
-  - 🇺🇸 美国2|@ripaojiedian
-  - RU_speednode_0031
-  - RU_speednode_0035
-  - FR_speednode_0018
-  - 香港v2|@ripaojiedian
-  - US_speednode_0050
-  - ES_speednode_0010
-  - RU_speednode_0036
-  - US_speednode_0048
+  - CZ_speednode_0008
   - ES_speednode_0012
-  - GB_speednode_0020
   - ES_speednode_0015
+  - FR_speednode_0016
+  - 🇯🇵 日本2|@ripaojiedian
+  - DE_speednode_0009
+  - 日本v2|@ripaojiedian
+  - US_speednode_0047
+  - RU_speednode_0038
+  - US_speednode_0045
+  - FR_speednode_0017
+  - 香港|@ripaojiedian
+  - GB_speednode_0018
+  - US_speednode_0044
+  - LU_speednode_0032
+  - US_speednode_0048
+  - 🇹🇼 台湾2|@ripaojiedian
+  - 🇯🇵 日本|@ripaojiedian
+  - 新加坡|@ripaojiedian
+  - RU_speednode_0037
+  - RU_speednode_0039
+  - 美国3|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 香港6|@ripaojiedian
+  - 新加坡2|@ripaojiedian
+  - 🇹🇼 台湾3|@ripaojiedian
+  - AT_speednode_0001
+  - 日本4|@ripaojiedian
+  - US_speednode_0046
+  - ES_speednode_0010
+  - US_speednode_0043
+  - NL_speednode_0034
+  - US_speednode_0042
+  - US_speednode_0041
+  - RU_speednode_0035
+  - 🇺🇸 美国2|@ripaojiedian
+  - LU_speednode_0033
+  - 香港4|@ripaojiedian
+  - RU_speednode_0036
+  - US_speednode_0049
+  - 🇰🇷 韩国|@ripaojiedian
+  - 新加坡3|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - CY_speednode_0007
+  - GB_speednode_0019
   - ES_speednode_0011
+  - 日本3|@ripaojiedian
+  - 香港v2|@ripaojiedian
+  - ES_speednode_0013
+  - 🇹🇼 台湾|@ripaojiedian
+  - 🇭🇰 香港2|@ripaojiedian
+  - 香港3|@ripaojiedian
   - 美国4|@ripaojiedian
+  - tg频道:@ripaojiedian
+  - RU_speednode_0040
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -963,9 +824,7 @@ proxy-groups:
   - 🇺🇸 美国2|@ripaojiedian
   - 美国3|@ripaojiedian
   - 美国4|@ripaojiedian
-  - US_speednode_0037
-  - US_speednode_0039
-  - US_speednode_0040
+  - US_speednode_0041
   - US_speednode_0042
   - US_speednode_0043
   - US_speednode_0044
@@ -974,16 +833,11 @@ proxy-groups:
   - US_speednode_0047
   - US_speednode_0048
   - US_speednode_0049
-  - US_speednode_0050
-  - US_speednode_0051
-  - US_speednode_0052
-  - US_speednode_0053
-  - US_speednode_0054
   type: select
 - name: 🇨🇳 台湾
   proxies:
-  - 🇹🇼 台湾2|@ripaojiedian
   - 🇹🇼 台湾|@ripaojiedian
+  - 🇹🇼 台湾2|@ripaojiedian
   - 🇹🇼 台湾3|@ripaojiedian
   type: select
 - name: 🇨🇳 中国
@@ -994,10 +848,11 @@ proxy-groups:
   proxies:
   - 香港|@ripaojiedian
   - 🇭🇰 香港2|@ripaojiedian
-  - 🇭🇰 香港3|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 香港6|@ripaojiedian
   - 香港3|@ripaojiedian
+  - 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 香港6|@ripaojiedian
+  - 香港5|@ripaojiedian
   - 香港v2|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
@@ -1006,8 +861,8 @@ proxy-groups:
   type: select
 - name: 🇫🇷 法国
   proxies:
+  - FR_speednode_0016
   - FR_speednode_0017
-  - FR_speednode_0018
   type: select
 - name: 🇸🇬 新加坡
   proxies:
@@ -1017,27 +872,25 @@ proxy-groups:
   type: select
 - name: 🇬🇧 英国
   proxies:
+  - GB_speednode_0018
   - GB_speednode_0019
-  - GB_speednode_0020
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - REJECT
+  - 🇰🇷 韩国|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - RU_speednode_0029
-  - RU_speednode_0030
-  - RU_speednode_0031
-  - RU_speednode_0032
-  - RU_speednode_0033
-  - RU_speednode_0034
   - RU_speednode_0035
   - RU_speednode_0036
+  - RU_speednode_0037
+  - RU_speednode_0038
+  - RU_speednode_0039
+  - RU_speednode_0040
   type: select
 - name: 🇩🇪 德国
   proxies:
-  - DE_speednode_0008
+  - DE_speednode_0009
   type: select
 rules:
 - DOMAIN,cdn.bootcss.com,🚨 病毒网站

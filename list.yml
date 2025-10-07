@@ -1,4 +1,4 @@
-# Update: 2025-10-06 02:59
+# Update: 2025-10-07 02:54
 allow-lan: false
 dns:
   enable: true
@@ -74,6 +74,13 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
+- name: 🇭🇰 香港5|@ripaojiedian
+  password: 2338a604-dc6a-4470-bc7d-947e462a3cfd
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  sni: lazy.rsqpq.cn
+  type: trojan
 - name: 香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -82,6 +89,22 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 日本|@ripaojiedian
+  network: ws
+  port: '30806'
+  server: v6.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - name: 日本2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -144,7 +167,7 @@ proxies:
   name: 🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
   port: 38388
-  server: 103.186.154.51
+  server: 103.186.155.233
   tfo: false
   type: ss
 - alterId: 0
@@ -157,6 +180,13 @@ proxies:
   tls: false
   type: vmess
   uuid: ccc37b1b-4ef0-430c-b1e1-20bf96fcff8c
+- name: 香港5|@ripaojiedian
+  network: tcp
+  password: 2338a604-dc6a-4470-bc7d-947e462a3cfd
+  port: 30002
+  server: lazy.rsqpq.cn
+  skip-cert-verify: true
+  type: trojan
 - alterId: 0
   cipher: auto
   name: 新加坡3|@ripaojiedian
@@ -186,22 +216,25 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
+  - 🇭🇰 香港3|@ripaojiedian
   - 日本2|@ripaojiedian
+  - 日本|@ripaojiedian
+  - 香港6|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 香港5|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 新加坡|@ripaojiedian
   - 日本3|@ripaojiedian
   - 美国|@ripaojiedian
   - 美国2|@ripaojiedian
-  - 🇭🇰 香港3|@ripaojiedian
-  - 🇻🇳 越南|@ripaojiedian
-  - tg频道:@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 香港4|@ripaojiedian
+  - 新加坡3|@ripaojiedian
   - CN_speednode_0007
   - 香港3|@ripaojiedian
-  - 新加坡3|@ripaojiedian
-  - 🇸🇬 新加坡3|@ripaojiedian
   - 🇭🇰 香港2|@ripaojiedian
-  - 香港6|@ripaojiedian
-  - 香港|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
+  - 香港4|@ripaojiedian
+  - tg频道:@ripaojiedian
   - 新加坡2|@ripaojiedian
   type: fallback
   url: https://www.google.com/
@@ -258,6 +291,7 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
+  - 日本|@ripaojiedian
   - 日本2|@ripaojiedian
   - 日本3|@ripaojiedian
   type: select
@@ -280,8 +314,10 @@ proxy-groups:
   - 🇭🇰 香港2|@ripaojiedian
   - 🇭🇰 香港3|@ripaojiedian
   - 香港4|@ripaojiedian
+  - 🇭🇰 香港5|@ripaojiedian
   - 香港6|@ripaojiedian
   - 香港3|@ripaojiedian
+  - 香港5|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
   proxies:

@@ -1,4 +1,4 @@
-# Update: 2025-10-12 02:59
+# Update: 2025-10-13 03:06
 allow-lan: false
 dns:
   enable: true
@@ -59,28 +59,33 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 🇭🇰 香港3|@ripaojiedian
-  port: 30485
-  server: 103.224.80.67
+  port: 41522
+  server: 43.247.135.17
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 4419
-  server: 221.128.195.221
-  skip-cert-verify: true
-  sni: www.nintendogames.net
-  type: trojan
-- name: 香港6|@ripaojiedian
-  network: tcp
+  uuid: ea897b9a-0894-4f17-ab5b-7e059678734d
+- name: 🇭🇰 香港4|@ripaojiedian
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 126.47.92.160
+  server: 126.66.52.118
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
+- name: 🇭🇰 香港6|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 58.152.53.162
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
+  type: trojan
+- name: 🇯🇵 日本2|@ripaojiedian
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1920
+  server: 36.156.102.84
+  skip-cert-verify: false
+  sni: www.nintendogames.net
   type: trojan
 - alterId: 2
   cipher: auto
@@ -98,14 +103,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: 日本2|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 1806
-  server: 36.156.102.84
-  skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
 - name: 日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -114,6 +111,13 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇰🇷 韩国|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.90.63.177
+  tfo: false
+  type: ss
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -157,6 +161,57 @@ proxies:
   skip-cert-verify: true
   sni: fe2.update.microsoft.com
   type: trojan
+- cipher: aes-256-cfb
+  name: 🇻🇳 越南|@ripaojiedian
+  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
+  port: 38388
+  server: 103.186.154.27
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 香港3|@ripaojiedian
+  network: tcp
+  port: '30485'
+  server: 103.224.80.67
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
+- name: 香港4|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 4419
+  server: 221.128.195.221
+  skip-cert-verify: true
+  sni: www.nintendogames.net
+  type: trojan
+- name: 香港6|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 443
+  server: 126.47.92.160
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
+  type: trojan
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 1806
+  server: 36.156.102.84
+  sni: www.nintendogames.net
+  type: trojan
+- name: 美国3|@ripaojiedian
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: '%2F'
 - name: SG_speednode_0018
   network: ws
   password: wb6368
@@ -170,34 +225,6 @@ proxies:
     headers:
       Host: hsdgbuys.pages.dev
     path: /
-- cipher: aes-256-cfb
-  name: 🇻🇳 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.136
-  tfo: false
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 香港3|@ripaojiedian
-  network: tcp
-  port: '30485'
-  server: 103.224.80.67
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a9ba904e-2d8b-401e-9226-b5114c049f05
-- name: 美国3|@ripaojiedian
-  network: ws
-  password: wb6368
-  port: 2087
-  server: 92.243.75.49
-  sni: hsdgbuys.pages.dev
-  type: trojan
-  ws-opts:
-    headers:
-      Host: hsdgbuys.pages.dev
-    path: '%2F'
 - name: SG_speednode_0020
   password: installshield
   port: 8443
@@ -216,25 +243,29 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 香港|@ripaojiedian
-  - 美国2|@ripaojiedian
-  - 美国3|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - 日本2|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 香港6|@ripaojiedian
-  - 新加坡2|@ripaojiedian
-  - 🇸🇬 新加坡3|@ripaojiedian
-  - 🇻🇳 越南|@ripaojiedian
-  - SG_speednode_0018
-  - 美国|@ripaojiedian
-  - SG_speednode_0020
-  - 香港3|@ripaojiedian
   - 日本|@ripaojiedian
-  - 🇭🇰 香港2|@ripaojiedian
+  - 🇻🇳 越南|@ripaojiedian
   - tg频道:@ripaojiedian
+  - 美国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 香港3|@ripaojiedian
+  - 日本2|@ripaojiedian
+  - 🇸🇬 新加坡3|@ripaojiedian
+  - 🇭🇰 香港6|@ripaojiedian
+  - 香港4|@ripaojiedian
   - 🇭🇰 香港3|@ripaojiedian
+  - 美国3|@ripaojiedian
+  - 美国2|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 新加坡|@ripaojiedian
+  - 🇯🇵 日本2|@ripaojiedian
+  - 新加坡2|@ripaojiedian
+  - SG_speednode_0020
+  - 🇭🇰 香港2|@ripaojiedian
+  - 🇰🇷 韩国|@ripaojiedian
+  - 香港6|@ripaojiedian
   - 日本3|@ripaojiedian
+  - SG_speednode_0018
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -290,15 +321,15 @@ proxy-groups:
   type: select
 - name: 🇯🇵 日本
   proxies:
+  - 🇯🇵 日本2|@ripaojiedian
   - 日本|@ripaojiedian
-  - 日本2|@ripaojiedian
   - 日本3|@ripaojiedian
+  - 日本2|@ripaojiedian
   type: select
 - name: 🇺🇸 美国
   proxies:
   - 美国|@ripaojiedian
   - 美国2|@ripaojiedian
-  - SG_speednode_0018
   - 美国3|@ripaojiedian
   type: select
 - name: 🇨🇳 台湾
@@ -314,9 +345,11 @@ proxy-groups:
   - 香港|@ripaojiedian
   - 🇭🇰 香港2|@ripaojiedian
   - 🇭🇰 香港3|@ripaojiedian
+  - 🇭🇰 香港4|@ripaojiedian
+  - 🇭🇰 香港6|@ripaojiedian
+  - 香港3|@ripaojiedian
   - 香港4|@ripaojiedian
   - 香港6|@ripaojiedian
-  - 香港3|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
   proxies:
@@ -331,6 +364,7 @@ proxy-groups:
   - 新加坡|@ripaojiedian
   - 新加坡2|@ripaojiedian
   - 🇸🇬 新加坡3|@ripaojiedian
+  - SG_speednode_0018
   - SG_speednode_0020
   type: select
 - name: 🇬🇧 英国
@@ -339,7 +373,7 @@ proxy-groups:
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - REJECT
+  - 🇰🇷 韩国|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:

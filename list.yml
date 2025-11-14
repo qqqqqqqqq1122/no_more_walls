@@ -1,4 +1,4 @@
-# Update: 2025-11-13 03:12
+# Update: 2025-11-14 03:10
 allow-lan: false
 dns:
   enable: true
@@ -77,28 +77,25 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 香港6|@ripaojiedian
-  network: tcp
-  password: 50a99183-2543-40bd-98a2-12bbc6ecf882
-  port: 49213
-  server: 118.253.166.237
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
 - cipher: chacha20-ietf
-  name: 🇭🇰 香港7|@ripaojiedian
-  password: passwd
-  plugin: obfs
-  plugin-opts:
-    host: 31832-qOf3ahM8.download.microsoft.com
-    mode: http
-  port: 2000
-  server: oshk02.mynode.me
+  name: 🇭🇰 香港6|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 103.149.182.158
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰 香港7|@ripaojiedian
+  port: 25007
+  server: onecat-jp.03ezhg0qsa.download
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 69749298-6821-3358-b6d3-1d18d8642cba
 - name: 日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 2145
+  port: 4011
   server: 36.150.215.246
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
@@ -107,40 +104,49 @@ proxies:
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 1334
-  server: 160.16.204.136
+  server: 160.16.132.158
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 日本3|@ripaojiedian
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
-  port: 4095
-  server: 160.16.214.6
+  port: 3169
+  server: 160.16.196.59
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵 日本4|@ripaojiedian
-  port: 28016
-  server: 175.29.22.101
+  port: 47083
+  server: 114.98.183.61
   skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
+  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
+- alterId: 0
+  cipher: auto
+  name: 🇰🇷 韩国|@ripaojiedian
+  port: 47093
+  server: 114.98.183.61
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
 - name: 新加坡|@ripaojiedian
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
   port: 2760
-  server: 160.16.106.144
+  server: 160.16.81.84
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
-  port: 127
-  server: 160.16.106.144
+  port: 5553
+  server: 160.16.124.55
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -155,8 +161,8 @@ proxies:
 - name: 美国|@ripaojiedian
   network: tcp
   password: 2274c52572e721086f8bd8f88984643c
-  port: 2890
-  server: 160.16.68.250
+  port: 4211
+  server: 160.16.107.37
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
@@ -171,34 +177,46 @@ proxies:
 - name: 美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
-  port: 19220
-  server: 36.150.215.243
+  port: 4094
+  server: 116.49.237.130
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 日本4|@ripaojiedian
+  name: 香港7|@ripaojiedian
   network: tcp
-  port: '28016'
-  server: 175.29.22.101
+  port: '25007'
+  server: onecat-jp.03ezhg0qsa.download
   servername: ''
   tls: false
   type: vmess
-  uuid: d2540325-9ad6-33d7-be86-259b5bba4ef8
-- name: HK_speednode_0004
-  password: BxceQaOe
-  port: 4569
-  server: 116.49.237.130
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-  udp: true
-- name: NL_speednode_0006
+  uuid: 69749298-6821-3358-b6d3-1d18d8642cba
+- alterId: 0
+  cipher: auto
+  name: 日本4|@ripaojiedian
+  network: tcp
+  port: '47083'
+  server: 114.98.183.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
+- alterId: 0
+  cipher: auto
+  name: 韩国|@ripaojiedian
+  network: tcp
+  port: '47093'
+  server: 114.98.183.61
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b3fa070f-5511-48be-934b-f632f6b8a7c7
+- name: BE_speednode_0001
   network: ws
-  password: c2d6a850-7e35-44f5-ab9f-8299f6f8c72b
+  password: 88701884-7690-4b79-ac5d-36d299e05e83
   port: 443
-  server: 194.147.115.149
+  server: 34.22.190.30
   skip-cert-verify: false
   sni: joss.dus.biz.id
   type: trojan
@@ -206,12 +224,12 @@ proxies:
   ws-opts:
     headers:
       Host: joss.dus.biz.id
-    path: /Free-VPN-CF-Geo-Project/194.147.115.149=443
-- name: PL_speednode_0007
+    path: /Free-VPN-CF-Geo-Project/34.22.190.30=443
+- name: IL_speednode_0008
   network: ws
-  password: 49d416e1-4cec-41e1-bff6-3748c466f275
-  port: 8443
-  server: 45.144.48.158
+  password: a5a3350e-6ea2-4e12-ae84-20db849ce1fc
+  port: 81
+  server: 94.131.114.50
   skip-cert-verify: false
   sni: joss.dus.biz.id
   type: trojan
@@ -219,8 +237,34 @@ proxies:
   ws-opts:
     headers:
       Host: joss.dus.biz.id
-    path: /Free-VPN-CF-Geo-Project/45.144.48.158=8443
-- name: RU_speednode_0009
+    path: /Free-VPN-CF-Geo-Project/94.131.114.50=81
+- name: NL_speednode_0015
+  network: ws
+  password: 5ad5fe82-6b60-4f59-977b-93910ef7a9ca
+  port: 443
+  server: 86.107.197.239
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/86.107.197.239=443
+- name: PL_speednode_0016
+  network: ws
+  password: 55d19115-ec40-407b-a674-74e6a948347a
+  port: 2053
+  server: 45.144.48.55
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/45.144.48.55=2053
+- name: RU_speednode_0018
   network: ws
   password: 14d6efcf-b0d3-4054-9d4e-e1347e3ceaa2
   port: 2053
@@ -233,6 +277,19 @@ proxies:
     headers:
       Host: joss.dus.biz.id
     path: /Free-VPN-CF-Geo-Project/213.159.208.88=2053
+- name: SE_speednode_0020
+  network: ws
+  password: edeff73d-065d-4b0a-b848-aad9d3380223
+  port: 443
+  server: 77.221.141.207
+  skip-cert-verify: false
+  sni: joss.dus.biz.id
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: joss.dus.biz.id
+    path: /Free-VPN-CF-Geo-Project/77.221.141.207=443
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
@@ -244,29 +301,34 @@ proxy-groups:
 - interval: 300
   name: ♻ 自动选择
   proxies: &id001
-  - 香港4|@ripaojiedian
-  - 日本3|@ripaojiedian
-  - HK_speednode_0004
+  - IL_speednode_0008
   - 🇭🇰 香港7|@ripaojiedian
-  - 香港|@ripaojiedian
-  - tg频道:@ripaojiedian
   - 🇯🇵 日本4|@ripaojiedian
-  - 日本2|@ripaojiedian
-  - 日本|@ripaojiedian
-  - RU_speednode_0009
-  - NL_speednode_0006
-  - 美国2|@ripaojiedian
-  - 香港6|@ripaojiedian
   - 新加坡2|@ripaojiedian
   - 🇭🇰 香港2|@ripaojiedian
+  - NL_speednode_0015
+  - RU_speednode_0018
+  - 🇭🇰 香港6|@ripaojiedian
+  - 日本3|@ripaojiedian
+  - PL_speednode_0016
   - 香港5|@ripaojiedian
-  - 新加坡3|@ripaojiedian
-  - 日本4|@ripaojiedian
-  - 美国|@ripaojiedian
   - 香港3|@ripaojiedian
-  - 新加坡|@ripaojiedian
-  - PL_speednode_0007
+  - 日本4|@ripaojiedian
+  - 韩国|@ripaojiedian
+  - 新加坡3|@ripaojiedian
+  - SE_speednode_0020
+  - tg频道:@ripaojiedian
+  - 日本2|@ripaojiedian
+  - 香港4|@ripaojiedian
+  - 香港7|@ripaojiedian
   - 美国3|@ripaojiedian
+  - 新加坡|@ripaojiedian
+  - 美国|@ripaojiedian
+  - 香港|@ripaojiedian
+  - 🇰🇷 韩国|@ripaojiedian
+  - BE_speednode_0001
+  - 日本|@ripaojiedian
+  - 美国2|@ripaojiedian
   type: fallback
   url: https://www.google.com/
 - interval: 300
@@ -349,9 +411,9 @@ proxy-groups:
   - 香港3|@ripaojiedian
   - 香港4|@ripaojiedian
   - 香港5|@ripaojiedian
-  - 香港6|@ripaojiedian
+  - 🇭🇰 香港6|@ripaojiedian
   - 🇭🇰 香港7|@ripaojiedian
-  - HK_speednode_0004
+  - 香港7|@ripaojiedian
   type: select
 - name: 🇨🇦 加拿大
   proxies:
@@ -373,11 +435,12 @@ proxy-groups:
   type: select
 - name: 🇰🇷 韩国
   proxies:
-  - REJECT
+  - 🇰🇷 韩国|@ripaojiedian
+  - 韩国|@ripaojiedian
   type: select
 - name: 🇷🇺 俄罗斯
   proxies:
-  - RU_speednode_0009
+  - RU_speednode_0018
   type: select
 - name: 🇩🇪 德国
   proxies:

@@ -8,6 +8,7 @@ on:
 jobs:
   fetch-nodes:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
 
     steps:
     - uses: actions/checkout@v4
@@ -18,18 +19,68 @@ jobs:
         python-version: '3.10'
 
     - name: Install dependencies
-      run: pip install -r requirements.txt
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
 
     - name: Prepare output directories
-      run: mkdir -p snippets
+      run: |
+        mkdir -p snippets
+        ls -la
 
-    - name: Run fetch.py
-      run: python fetch.py
+    - name: Validate configuration
+      run: |
+        python -c "from config import validate_config; issues = validate_config(); print('Config validation:', issues); exit(1 if issues else 0)"
+
+    - name: Run fetch.py with timeout and error handling
+      timeout-minutes: 25
+      run: |
+        python fetch.py 2>&1 | tee fetch.log || {
+          echo "Fetch script failed with exit code $?"
+          echo "Last 50 lines of output:"
+          tail -50 fetch.log
+          exit 1
+        }
+
+    - name: Verify output files
+      run: |
+        echo "Checking generated files..."
+        for file in list.yml list.txt list_raw.txt list_result.csv; do
+          if [ -f "$file" ]; then
+            echo "✓ $file exists ($(wc -l < "$file") lines)"
+          else
+            echo "✗ $file missing"
+            exit 1
+          fi
+        done
+
+    - name: Check for errors in logs
+      run: |
+        if grep -i "error\|exception\|failed" fetch.log | grep -v "validation issues"; then
+          echo "Errors detected in fetch log"
+          exit 1
+        fi
 
     - name: Commit and Push if changed
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-        git add list.yml list.txt
-        git diff --cached --quiet || git commit -m "auto: update nodes by GitHub Actions"
-        git push
+        git add list.yml list.meta.yml list.txt list_raw.txt list_result.csv snippets/
+        
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "auto: update nodes by GitHub Actions"
+          git push
+          echo "Changes committed and pushed successfully"
+        fi
+
+    - name: Upload logs on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: fetch-logs
+        path: |
+          fetch.log
+          *.log
+        retention-days: 7
